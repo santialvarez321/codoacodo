@@ -1,0 +1,136 @@
+
+/* Estilos para el encabezado, igual a la pagina principal */
+.encabezado {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.encabezado img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Estilos para la barra de navegación*/
+.menu {
+    background-color: rgb(6, 6, 29);
+    color: white;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: darkgoldenrod;
+    animation: 0.5s infinite boton-menu;
+}
+
+/* Animación botones del menu */
+@keyframes boton-menu {
+    0% { transform: scaleX(1.0);}
+    50% { transform: scaleX(1.15);}
+    100% { transform: scaleX(1.0);}
+ }   
+
+/* -------------------------------------------*/
+
+/* Estilos contenedor historia */
+.historia-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.historia-portada {
+    width: 90%; /* Cambia el ancho del contenedor */
+    margin: 20px auto;  /* Centra el contenedor horizontalmente */
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    background-color: hsl(0, 2%, 88%);
+    color: #040422;  
+    font-family: Arial, sans-serif;
+}
+
+.historia-portada img {
+    width: 70%;
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: 20px auto 30px; /* Centra la imagen horizontalmente */
+    max-width: 100%; /* Asegura que la imagen no sobrepase el ancho del contenedor */
+    height: auto;
+}
+
+.historia-titulo {
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+}
+
+.historia-resumen {
+    margin: 20px; /* Ajusta el margen alrededor del contenedor */
+    padding: 15px; /* Ajusta el relleno dentro del contenedor */
+    text-align: justify; /* Justificar el texto */
+    text-indent: 20px; /* Agrega sangría al texto */
+}
+
+.historia-resumen p {
+    margin-bottom: 15px;
+}
+
+
+/*-- Pie de página- igual en todas las paginas----------------------------------------------------*/
+.pie {
+    background-color: rgb(6, 6, 29);
+    color: white;
+    text-align: center;
+    padding: 5px 0; /* Reduce el padding-top (borde superior) y padding-bottom (borde inferior) según sea necesario */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Estilo para los iconos */
+.iconos a{
+    display: inline-flex; /* Hace que los iconos se alineen horizontalmente */
+    color: darkgoldenrod;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 15px;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Estilo para el símbolo de copyright */
+.pie p {
+    margin: 25px; /* Elimina el margen predeterminado del párrafo */
+}
+/* -------------------------------------------------------------------------------------------------*/
+
+/* Aplicar estilos específicos para pantallas pequeñas, igual que la pagina principal */
+@media screen and (max-width: 768px) {
+    .contenedor-coin div {
+        flex-basis: 100%; /* Los divs ocuparán todo el ancho en pantallas pequeñas */
+        padding: 0; /* Elimina el espacio entre la imagen y el texto */
+        margin-bottom: 20px; /* Añade espacio entre los elementos en pantallas pequeñas */
+    }
+}

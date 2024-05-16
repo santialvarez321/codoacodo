@@ -1,0 +1,177 @@
+/* Estilos para el encabezado, igual a la pagina principal */
+.encabezado {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.encabezado img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Estilos para la barra de navegación*/
+.menu {
+    background-color: rgb(6, 6, 29);
+    color: white;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: darkgoldenrod;
+    animation: 0.5s infinite boton-menu;
+}
+
+/* Animación botones del menu */
+@keyframes boton-menu {
+    0% { transform: scaleX(1.0);}
+    50% { transform: scaleX(1.15);}
+    100% { transform: scaleX(1.0);}
+ }   
+
+
+ /* ---------------------------------------------------------------*/
+
+/* Estilos generales del cuerpo de criptomonedas */
+body {
+    font-family: Arial, sans-serif; /* Cambia el estilo de la letra*/
+    margin: 10px;
+    padding: 20px;
+}
+
+.contenedor-criptomonedas {
+    width: 90%;
+    margin: 20px auto; /*margen sup e inf, y automaticamente centra horizontalmente*/
+    padding: 20px; /*agrega un espacio interno alrededor del contenedor*/
+    background-color: hsl(0, 2%, 88%);
+    border-radius: 10px;
+  
+}
+
+
+/* Estilo para el título de la sección blockchain */
+
+.contenedor-top_five {
+    width: 90%;
+    margin: 20px auto; /*margen sup e inf, y automaticamente centra horizontalmente*/
+    padding: 20px; /*agrega un espacio interno alrededor del contenedor*/
+    background-color: rgb(31, 36, 107);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.criptomonedas-titulo {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    /* Otros estilos según tu preferencia */
+}
+
+
+
+.blockchain-titulo {
+    color: rgb(46, 46, 158);
+    font-size: 24px;
+    /* Otros estilos según tu preferencia */
+}
+
+.top_five-titulo {
+    color: rgb(46, 46, 158);
+    font-size: 24px;
+    /* Otros estilos según tu preferencia */
+}
+
+/* Estilos para los contenedores de criptomonedas */
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.cripto {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.imagen {
+    position: relative; /* Añade posición relativa para los efectos */
+    overflow: hidden; /* Oculta el desbordamiento de la imagen */
+    width: 150px; /* Ancho fijo para la imagen */
+    margin-right: 20px;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Agrega transición para suavizar el efecto */
+}
+
+.imagen:hover img {
+    transform: rotate(360deg); /* Rota la imagen 360 grados cuando se pasa el cursor sobre ella */
+}
+
+.explicacion {
+    flex: 1; /* El contenido ocupa el espacio restante */
+}
+
+h3 {
+    margin-top: 30px; /* Elimina el margen superior del título */
+    color: darkgoldenrod;
+
+}
+
+
+/* Aplicar estilos específicos para pantallas pequeñas, igual que la pagina principal */
+@media screen and (max-width: 768px) {
+    .contenedor-coin div {
+        flex-basis: 100%; /* Los divs ocuparán todo el ancho en pantallas pequeñas */
+        padding: 0; /* Elimina el espacio entre la imagen y el texto */
+        margin-bottom: 20px; /* Añade espacio entre los elementos en pantallas pequeñas */
+    }
+}
+/* Estilos para el pie de página*/
+.pie {
+    background-color: rgb(6, 6, 29);
+    color: white;
+    text-align: center;
+    padding: 5px 0; /* Reduce el padding-top (borde superior) y padding-bottom (borde inferior) según sea necesario */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Estilo para los iconos */
+.iconos a{
+    display: inline-flex; /* Hace que los iconos se alineen horizontalmente */
+    color: darkgoldenrod;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 15px;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Estilo para el símbolo de copyright */
+.pie p {
+    margin: 25px; /* Elimina el margen predeterminado del párrafo */
+}
+/* ---------------------------------------------------------------*/

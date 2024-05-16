@@ -1,0 +1,171 @@
+
+/* Estilos para el contenedor principal */
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px; /* Establece un margen inferior en el contenedor principal para crear espacio entre el pie de página y el borde inferior de la ventana del navegador */
+    overflow: hidden; /* Para ocultar el desbordamiento de la imagen que se desplaza */
+}
+.encabezado {
+    text-align: center; /* Centra la imagen estática horizontalmente */
+}
+
+.imagen-estatica {
+    display: inline-block; /* Alinea la imagen estática junto con el texto */
+}
+
+.imagen-desplazable {
+    overflow: hidden; /* Para ocultar el desbordamiento de la imagen que se desplaza */
+}
+
+.imagen-desplazable img {
+    width: 100%; /* Ajusta la imagen desplazable al 100% del ancho del contenedor */
+    animation: moverImagen 15s linear infinite; /* Nombre de la animación, duración, tipo de temporización, número de repeticiones */
+}
+
+@keyframes moverImagen {
+    0% {
+        transform: translateX(-100%); /* Mueve la imagen completamente hacia la izquierda */
+    }
+    100% {
+        transform: translateX(100%); /* Mueve la imagen completamente hacia la derecha */
+    }
+}
+
+/* Estilos para el cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el encabezado */
+.encabezado {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.encabezado img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Estilos para la barra de navegación */
+.menu {
+    background-color: rgb(6, 6, 29);
+    color: white;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: darkgoldenrod;
+    animation: 0.5s infinite boton-menu;
+}
+/* Animación botones del menu */
+@keyframes boton-menu {
+    0% { transform: scaleX(1.0);}
+    50% { transform: scaleX(1.15);}
+    100% { transform: scaleX(1.0);}
+ }   
+
+
+/* Estilos para los artículos */
+.articulo1,
+.articulo2 {
+    padding: 20px;
+    font-family: Arial, sans-serif; /* Cambia el estilo de la letra para los artículos */
+}
+/* Crea un enlase a la pagina criptomoneda.html cuando se toca la palabra*/
+.enlace_block {
+    color: blue;
+    text-decoration: underline;
+}
+
+.enlace:hover {
+    color: darkblue;
+}
+
+.enlace_cripto {
+    color: blue;
+    text-decoration: underline;
+}
+
+.enlace:hover {
+    color: darkblue;
+}
+
+.contenedor-coin {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
+}
+
+.contenedor-coin div {
+    flex: 1;
+    padding: 10px; /* Añade espacio entre la imagen y el texto */
+}
+
+.contenedor-coin img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Darle movimiento a las imágnes*/
+.contenedor-coin img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+}
+
+/* Aplicar estilos específicos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .contenedor-coin div {
+        flex-basis: 100%; /* Los divs ocuparán todo el ancho en pantallas pequeñas */
+        padding: 0; /* Elimina el espacio entre la imagen y el texto */
+        margin-bottom: 20px; /* Añade espacio entre los elementos en pantallas pequeñas */
+    }
+}
+/* Estilos para el pie de página */
+.pie {
+    background-color: rgb(6, 6, 29);
+    color: white;
+    text-align: center;
+    padding: 5px 0; /* Reduce el padding-top (borde superior) y padding-bottom (borde inferior) según sea necesario */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Estilo para los iconos */
+.iconos a{
+    display: inline-flex; /* Hace que los iconos se alineen horizontalmente */
+    color: darkgoldenrod;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 15px;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Estilo para el símbolo de copyright */
+.pie p {
+    margin: 25px; /* Elimina el margen predeterminado del párrafo */
+}
+
+
+

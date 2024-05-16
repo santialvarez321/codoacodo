@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilos_contacto.css">
+<link rel="icon" type="image/jpg" href="imagenes/favicon.jpg"/>
+<link rel="stylesheet" href="imagenes/favicon_2.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<title>Formulario de Contacto</title>
+
+
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Página principal</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="criptomonedas.html">Criptomonedas</a></li>
+            <li><a href="quienes.html">¿Quiénes somos?</a></li>
+            <li><a href="contacto.html">Formulario de Contacto</a></li>
+        </ul>
+    </nav>
+
+<h1>Formulario de Contacto</h1>
+<div class="caja-formulario">
+    <form id="contactForm" onsubmit="return validateForm()">
+    <div class="caja-f1">
+
+        <label for="nombre">Nombre y Apellido:</label><br>
+        <input type="text" id="nombre" name="nombre">
+        <div id="alertanombrevacio" hidden>POR FAVOR COMPLETAR</div>
+        <br>
+    
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email">
+        <div id="alertaemailvacio" hidden>POR FAVOR COMPLETAR</div>
+
+    </div>
+    
+    <div class="caja-f1">
+
+        <label for="motivo">Motivo de contacto:</label><br>
+        <select id="motivo" name="motivo">
+            <option value="">Selecciona un motivo</option>
+            <option value="consulta">Consulta</option>
+            <option value="comentario">Comentario</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="inversion">Inversion</option>
+            <option value="publicidad">Publicidad</option>
+        </select>
+        <div id="alertamotivovacio" hidden>POR FAVOR COMPLETAR</div>
+
+    </div>
+
+    <div class="caja-f2">
+
+        <label>Opciones adicionales:</label><br><br>
+        <input type="checkbox" id="suscripcion" name="suscripcion">
+        <label for="suscripcion">Suscribirme al boletín</label><br><br>
+    
+        <label for="imagen">Adjuntar imagen:</label>
+        <input type="file" id="imagen" name="imagen"><br>
+
+    </div>
+
+    <div class="caja-f3">
+
+        <label for="mensaje">Mensaje:</label><br><br>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        <div id="alertamensajevacio" hidden>Tus comentarios nos ayudan a mejorar!</div>
+        <br>
+
+        <input type="submit" value="Enviar"> 
+
+    </div>
+
+    </form>
+
+</div>
+<script src='formulario.js'></script>
+
+
+<!-- Pie de página- igual en todas las paginas---------------------------------------------------->
+            <footer class="pie">
+       <div>
+           <p>&copy; 2024 Codo a Codo - Equipo 22</p>
+       </div>
+       <div class="iconos">
+           <a href="https://www.facebook.com/" title="Ir a Facebook" target="_blank"><span class="fab fa-facebook"></span></a>
+           <a href="https://www.instagram.com/" title="Ir a Instagram" target="_blank"><span class="fab fa-instagram"></span></a>
+           <a href="https://web.whatsapp.com/" title="Ir a Whatsapp" target="_blank"><span class="fab fa-whatsapp"></span></a>
+       </div>
+           </footer>
+
+</body>
+</html>
+

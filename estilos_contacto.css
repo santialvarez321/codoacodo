@@ -1,0 +1,232 @@
+/* Estilos para la barra de navegación */
+.menu {
+    background-color: rgb(6, 6, 29);
+    color: white;
+    text-align: center;
+    
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: darkgoldenrod;
+    animation: 0.5s infinite boton-menu;
+}
+/* Animación botones del menu */
+@keyframes boton-menu {
+    0% { transform: scaleX(1.0);}
+    50% { transform: scaleX(1.15);}
+    100% { transform: scaleX(1.0);}
+ }   
+
+
+h1{font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color:black;
+    text-align: center;
+ 
+ }
+ /* Genera un fondo de formulario que sera una imagen*/
+ form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 98%;
+    border-width: 3px;
+    border-radius: 15px;
+    border-style: double;
+    box-sizing: border-box;
+    background-image: url('imagenes/fondo-futurista.jpg'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el formulario */
+    background-position: center; /* Centra la imagen en el formulario */
+}
+
+/* Ajustes de estilo adicionales para el formulario */
+.caja-formulario > * {
+    flex: 1 1 100%; /* Hace que los elementos del formulario ocupen todo el ancho */
+    padding: 15px; /* Espaciado interior */
+    color: white; /* Color del texto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fuente del texto */
+    font-size: 18px; /* Tamaño del texto */
+}
+ 
+ .caja-f1 {
+     padding: 15px;
+     color: white;
+     border-style:hidden;
+     box-sizing:border-box;
+     margin-top: 10px;
+     text-align: center;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: white;
+     font-size: 18px;
+     }
+ 
+ 
+.caja-f2 {
+     padding: 15px;
+     color: white;
+     border-style:hidden;
+     box-sizing:border-box;
+     margin-top: 10px;
+     text-align: center;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: white;
+     font-size: 18px;
+     }
+ 
+ 
+.caja-f3 {
+     padding: 15px;
+     color: white;
+     border-style:hidden;
+     box-sizing:border-box;
+     margin-top: 10px;
+     text-align: center;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: white;
+     font-size: 18px;
+     }
+ 
+     input[type="text"] {
+         width: 200px;
+         height: 18px;
+         padding: 5px;
+         margin: 5px;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+     }
+ 
+     textarea {
+         width: 300px;
+         height: 100px;
+         padding: 10px;
+         margin: 5px;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+         background-color: #f9f9f9;
+         resize: vertical; 
+         overflow-y: auto;
+     }
+     
+     select {
+         width: 200px;
+         height: 30px;
+         padding: 5px;
+         font-family: Arial, sans-serif;
+         font-size: 14px;
+         color: #333;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+         background-color: #f9f9f9;
+     }
+ 
+     input[type="submit"] {width: 200px;
+    height: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    }
+ 
+    input[type="submit"]:hover {background-color: aqua;}
+    
+
+
+/*-- Pie de página- igual en todas las paginas----------------------------------------------------*/
+    .pie {
+    background-color: rgb(6, 6, 29);
+    color: white;
+    text-align: center;
+    padding: 5px 0; /* Reduce el padding-top (borde superior) y padding-bottom (borde inferior) según sea necesario */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+/* Estilo para los iconos */
+    .iconos a{
+    display: inline-flex; /* Hace que los iconos se alineen horizontalmente */
+    color: darkgoldenrod;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 15px;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    }
+    
+    /* Estilo para el símbolo de copyright */
+.pie p {
+    margin: 25px; /* Elimina el margen predeterminado del párrafo */
+}
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Dispositivos extra pequeños (600 px y menos) */
+     @media only screen and (max-width: 600px) {
+         .caja-f1 { width: 96%; }
+         .caja-f2 { width: 96%; }   
+         .caja-f3 { width: 96%; }
+     }
+/* Dispositivos pequeños (600 px y más) */
+     @media only screen and (min-width: 600px) {
+         .caja-f1 { width: 96%; }
+         .caja-f2 { width: 96%; }
+         .caja-f3 { width: 96%; }
+     }
+     /* Dispositivos medianos (768 px y más) */
+     @media only screen and (min-width: 768px) {
+         .caja-f1 { width: 48%; }
+         .caja-f2 { width: 96%; }
+         .caja-f3 { width: 96%; }
+         textarea {width: 400px;}
+     }
+/* Dispositivos grandes (992 px y más) */
+    @media only screen and (min-width: 992px) {
+         .caja-f1 { width: 48%; }
+         .caja-f2 { width: 96%; }
+         .caja-f3 { width: 96%; }
+         textarea {width: 600px;}
+     }
+/* Dispositivos extra grandes (1200 px y más) */
+     @media only screen and (min-width: 1200px) {
+         .caja-f1 { width: 32%; }
+         .caja-f2 { width: 32%; }
+         .caja-f3 { width: 96%; }
+         textarea {width: 700px;}
+         
+   }
+
+ 
+ /*
+  .blinking-exclamation {
+     font-size: 24px;
+     animation: blink-animation 1s infinite;
+ }
+ 
+ @keyframes blink-animation {
+     0% {
+         opacity: 1;
+     }
+     50% {
+         opacity: 0;
+     }
+     100% {
+         opacity: 1;
+     }
+ } */
