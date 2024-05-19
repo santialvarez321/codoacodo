@@ -120,6 +120,16 @@
     text-decoration: none; /* Elimina el subrayado de los enlaces */
 }
 
+/* Estilo para iframe*/
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ajusta la altura si es necesario */
+    margin-top: 10px; /* Ajusta el margen superior si es necesario */
+}
+
+
 /* Estilo para el símbolo de copyright */
 .pie p {
     margin: 25px; /* Elimina el margen predeterminado del párrafo */
