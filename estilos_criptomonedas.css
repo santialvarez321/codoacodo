@@ -61,7 +61,19 @@ body {
     width: 90%;
     margin: 20px auto; /*margen sup e inf, y automaticamente centra horizontalmente*/
     padding: 20px; /*agrega un espacio interno alrededor del contenedor*/
-    background-color: hsl(0, 2%, 88%);
+    background-color: hsl(0, 2%, 88%);/* Genera un fondo de formulario que será un color */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 98%;
+    border-width: 3px;
+    border-radius: 15px;
+    border-style: double;
+    box-sizing: border-box;
+    background-color: hsl(0, 2%, 88%); /* Establece el color de fondo */
+}
     border-radius: 10px;
   
 }

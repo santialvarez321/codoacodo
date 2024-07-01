@@ -74,7 +74,7 @@ color:#ffd200;
 background-color: #390e8c;
 border: 1px solid lightslategray;
 border-radius: 5px;
-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+box-shadow: 10px 10px 20px rgba(49, 48, 48, 0.5);
 }
 label {
 display: block;
@@ -225,3 +225,5 @@ color:#fdab13
     50% { transform: scaleX(1.15);}
     100% { transform: scaleX(1.0);}
  }   
+
+td {padding: 20px;}

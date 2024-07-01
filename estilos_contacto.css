@@ -43,27 +43,27 @@ h1{font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
  
  }
- /* Genera un fondo de formulario que sera una imagen*/
- form {
+ /* Genera un fondo de formulario que será un color */
+form {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    width: 98%;
+    width: 90%;
+    margin: 20px auto; 
     border-width: 3px;
     border-radius: 15px;
     border-style: double;
     box-sizing: border-box;
-    background-image: url('imagenes/fondo-futurista.jpg'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen */
-    background-size: cover; /* Ajusta la imagen para cubrir todo el formulario */
-    background-position: center; /* Centra la imagen en el formulario */
+    background-color: hsl(0, 2%, 88%); /* Establece el color de fondo */
+    margin-bottom: 20px; /* Agrega un margen inferior de 20px */
 }
 
 /* Ajustes de estilo adicionales para el formulario */
 .caja-formulario > * {
     flex: 1 1 100%; /* Hace que los elementos del formulario ocupen todo el ancho */
     padding: 15px; /* Espaciado interior */
-    color: white; /* Color del texto */
+    color: black; /* Color del texto */
     font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fuente del texto */
     font-size: 18px; /* Tamaño del texto */
 }
@@ -76,7 +76,7 @@ h1{font-family: Verdana, Geneva, Tahoma, sans-serif;
      margin-top: 10px;
      text-align: center;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
-     color: white;
+     color: black;
      font-size: 18px;
      }
  
@@ -89,7 +89,7 @@ h1{font-family: Verdana, Geneva, Tahoma, sans-serif;
      margin-top: 10px;
      text-align: center;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
-     color: white;
+     color:black;
      font-size: 18px;
      }
  
@@ -102,7 +102,7 @@ h1{font-family: Verdana, Geneva, Tahoma, sans-serif;
      margin-top: 10px;
      text-align: center;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
-     color: white;
+     color: black;
      font-size: 18px;
      }
  
